@@ -1,5 +1,5 @@
 {
-  "name": "CalculadoraDeCR",
+  "name": "calculadora-cr",
   "version": "1.0.0",
   "description": "Uma applicação web com foco em facilitar o cálculo de CR e CRA.",
   "main": "index.js",

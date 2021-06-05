@@ -6,6 +6,8 @@
 /frontend/build/
 /.pnp
 .pnp.js
+/.firebase
+/.github
 
 # testing
 /coverage
