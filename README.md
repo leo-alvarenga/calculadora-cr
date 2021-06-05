@@ -4,7 +4,7 @@ Uma aplicação React simples com o intuíto de facilitar o cálculo do CR (Coef
 > Autor: [Leonardo A. Alvarenga](https://github.com/leo-alvarenga)
 
 # Como utilizar?
-1. Acesse o [link]()
+1. Acesse o [link](https://calculadora-cr.web.app/)
 2. Faça o que se pede
 3. Obtenha os resultados
 
@@ -23,3 +23,6 @@ Abra um _issue_ especificando as condições nas quais o erro ocorreu e, se poss
 
 > Desenvolvido em React.js \
 <img src="./frontend/public/favicon.ico" alt="calculadora-cr" width="25px">
+
+> _Hosted by Firebase Hosting_ \
+<img src="./frontend/public/firebase-logo.png" alt="firebase-icon" width="25px">
