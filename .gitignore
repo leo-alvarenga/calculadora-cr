@@ -1,23 +1,24 @@
-## TYPO3 v6.2
-# Ignore several upload and file directories.
-/fileadmin/user_upload/
-/fileadmin/_temp_/
-/fileadmin/_processed_/
-/uploads/
-# Ignore cache
-/typo3conf/temp_CACHED*
-/typo3conf/temp_fieldInfo.php
-/typo3conf/deprecation_*.log
-/typo3conf/ENABLE_INSTALL_TOOL
-/typo3conf/realurl_autoconf.php
-/FIRST_INSTALL
-# Ignore system folders, you should have them symlinked.
-# If not comment out the following entries.
-/typo3
-/typo3_src
-/typo3_src-*
-/Packages
-/.htaccess
-/index.php
-# Ignore temp directory.
-/typo3temp/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/frontend/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

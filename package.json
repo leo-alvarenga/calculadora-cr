@@ -1,0 +1,11 @@
+{
+  "name": "CalculadoraDeCR",
+  "version": "1.0.0",
+  "description": "Uma applicação web com foco em facilitar o cálculo de CR e CRA.",
+  "main": "index.js",
+  "author": "Leonardo A. Alvarenga",
+  "license": "MIT",
+  "devDependencies": {
+    "create-react-app": "^4.0.3"
+  }
+}
