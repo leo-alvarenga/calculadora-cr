@@ -12,7 +12,7 @@ function App() {
         <Router>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route component={NotFound} />
+            <Route path='*' component={NotFound} />
           </Switch>
         </Router>
       </React.Fragment>

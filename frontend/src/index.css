@@ -23,3 +23,18 @@ code {
   margin-bottom: 5rem;
 }
 
+.guia-div{
+  padding-top: 1rem;
+}
+
+.guia-lista-texto{
+  padding-right: 1rem;
+}
+
+.guia-item-texto{
+  padding-bottom: 1rem;
+}
+
+.guia-img{
+  max-width: 100%;
+}

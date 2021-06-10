@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Col, Container, Jumbotron, Row } from 'react-bootstrap';
 
-import NavBar from '../components/assets/NavBar';
-import Footer from '../components/assets/Footer';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 class NotFound extends Component {
     state = {  }

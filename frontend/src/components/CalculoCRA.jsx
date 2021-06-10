@@ -27,8 +27,11 @@ class CalculoCRA extends Component {
 
                 console.log('saida: ' + saida);
                 console.log('creditos: ' + creditos);
+
+                return true;
             }
             
+            return false;
         });
 
         saida = saida / creditos;
@@ -98,14 +101,14 @@ class CalculoCRA extends Component {
 
     renderCRA = () => {
         if(this.state.saida < 40){
-            return <Badge pill variant='danger'>{this.state.saida}</Badge>;
+            return <Badge pill variant='danger'>{this.state.saida.toFixed(1)}</Badge>;
         }
 
         else if(this.state.saida < 60){
-            return <Badge pill variant='warning'>{this.state.saida}</Badge>;
+            return <Badge pill variant='warning'>{this.state.saida.toFixed(1)}</Badge>;
         }
 
-        return <Badge pill variant='success'>{this.state.saida}</Badge>;
+        return <Badge pill variant='success'>{this.state.saida.toFixed(1)}</Badge>;
     };
 
     renderBotoes = () => {
@@ -145,8 +148,8 @@ class CalculoCRA extends Component {
                                                 </FormGroup>
 
                                                 <FormGroup as={Col} md={6}>
-                                                    <Form.Label>{'Número de créditos cursados no período ' + (index + 1)}</Form.Label>
-                                                    <Form.Control id={'' + index} type="number" placeholder="Ex.: 4" min="1" max="50" style={{paddingRight: '1 rem'}} value={item.creditos} onChange={this.handleAlteracaoCreditos}/>
+                                                    <Form.Label>{'Número de créditos/CH cursados no período ' + (index + 1)}</Form.Label>
+                                                    <Form.Control id={'' + index} type="number" placeholder="Ex.: 4" step="1" min="1" max="1000" style={{paddingRight: '1 rem'}} value={item.creditos} onChange={this.handleAlteracaoCreditos}/>
                                                 </FormGroup>
 
                                             </Form.Row>

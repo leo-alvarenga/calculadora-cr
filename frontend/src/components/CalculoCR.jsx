@@ -26,8 +26,11 @@ class CalculoCR extends Component {
 
                 console.log('saida: ' + saida);
                 console.log('creditos: ' + creditos);
+
+                return true;
             }
             
+            return false;
         });
 
         saida = saida / creditos;
@@ -97,14 +100,14 @@ class CalculoCR extends Component {
 
     renderCR = () => {
         if(this.state.saida < 40){
-            return <Badge pill variant='danger'>{this.state.saida}</Badge>;
+            return <Badge pill variant='danger'>{this.state.saida.toFixed(2)}</Badge>;
         }
 
         else if(this.state.saida < 60){
-            return <Badge pill variant='warning'>{this.state.saida}</Badge>;
+            return <Badge pill variant='warning'>{this.state.saida.toFixed(2)}</Badge>;
         }
 
-        return <Badge pill variant='success'>{this.state.saida}</Badge>;
+        return <Badge pill variant='success'>{this.state.saida.toFixed(2)}</Badge>;
     };
 
     renderBotoes = () => {
@@ -114,6 +117,7 @@ class CalculoCR extends Component {
                     <Button variant='secondary' onClick={this.handleAddDisciplina} style={{marginRight: '1rem'}}>Adicionar disciplina</Button>
                     <Button variant='danger' onClick={this.handleExcluiDisciplina} style={{marginRight: '1rem'}}>Remover disciplina</Button>
                     <Button variant='warning' onClick={this.handleReset}>Reset</Button>
+                    
                 </div>
             );
         }
@@ -144,8 +148,8 @@ class CalculoCR extends Component {
                                                 </FormGroup>
 
                                                 <FormGroup as={Col} md={6}>
-                                                    <Form.Label>{'Número de créditos da disciplina ' + (index + 1)}</Form.Label>
-                                                    <Form.Control id={'' + index} type="number" placeholder="Ex.: 4" min="1" max="10" style={{paddingRight: '1 rem'}} value={item.creditos} onChange={this.handleAlteracaoCreditos}/>
+                                                    <Form.Label>{'Número de créditos/CH da disciplina ' + (index + 1)}</Form.Label>
+                                                    <Form.Control id={'' + index} type="number" placeholder="Ex.: 4" min="1" max="150" style={{paddingRight: '1 rem'}} value={item.creditos} onChange={this.handleAlteracaoCreditos}/>
                                                 </FormGroup>
 
                                             </Form.Row>

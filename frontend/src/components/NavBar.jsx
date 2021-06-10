@@ -1,4 +1,4 @@
-import {Nav, Navbar, OverlayTrigger, Tooltip} from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import React, { Component } from 'react';
 
 class NavBar extends Component {
@@ -38,22 +38,6 @@ class NavBar extends Component {
                             <Nav.Link href='/'>
                                 Início
                             </Nav.Link>
-
-                            <OverlayTrigger
-                                key='bottom'
-                                placement='bottom'
-                                overlay={
-                                    <Tooltip id='tooltip-sobre'>
-                                        Em desenvolvimento...
-                                    </Tooltip>
-                                }>
-                            
-                                <Nav.Link>
-                                    Sobre
-                                </Nav.Link>
-
-                            </OverlayTrigger>
-
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
